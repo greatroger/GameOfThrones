@@ -1,5 +1,6 @@
 # GameOfThrones
 冰与火之歌综合信息安卓版APP
+
 ***可安装文件（.apk）在```\app\build\outputs\apk\release目录下```***
 
 ***屏幕截图见```/images目录```***
