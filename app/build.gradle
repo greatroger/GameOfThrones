@@ -4,7 +4,7 @@ android {
     signingConfigs {
         config {
             keyAlias 'GameOfThrones'
-            keyPassword 'cheng0121'
+            keyPassword '******'
             storeFile file('D:/android/gameOfThrones.jks')
             storePassword 'cheng0121'
         }
