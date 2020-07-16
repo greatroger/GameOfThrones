@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FamilyItem">
+
+    <HorizontalScrollView
+        android:id="@id/Scroll"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutMenu"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <!--numColumns设置每行显示多少个-->
+    <GridView
+        android:id="@+id/grid_photo"
+        android:layout_below="@id/Scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2" />
+
+
+</RelativeLayout>

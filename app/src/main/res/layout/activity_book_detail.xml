@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.gameofthrones.BookDetail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="27sp"/>
+
+        <ImageView
+            android:id="@+id/img_book"
+            android:layout_width="130dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:id="@+id/over_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="165dp"
+            android:textSize="16sp"
+            android:textColor="#2E2E2E"/>
+
+        <ExpandableListView
+            android:id="@+id/exlist_lol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="300dp"
+            android:childDivider="#C5A8A9"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/sum_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exlist_lol"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="26dp"
+            android:text="内容简介····"
+            android:textColor="#80973A"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sum_title"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="21dp"
+            android:textColor="#4D4D4D"
+            android:layout_centerHorizontal="true"
+            android:lineSpacingExtra="3.5dp"
+            android:textSize="16sp" />
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

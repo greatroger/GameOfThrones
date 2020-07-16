@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gameofthrones.MusicContent">
+
+    <HorizontalScrollView
+        android:id="@id/Scroll"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/linearLayoutMenu"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/musicCover"
+        android:layout_width="130dp"
+        android:layout_height="160dp"
+        android:layout_below="@+id/Scroll"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/musicTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Scroll"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="170dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#2E2E2E"/>
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/musicTitle"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="180dp"
+        android:textSize="15sp"
+        android:textColor="#444444"/>
+
+
+    <TextView
+        android:id="@+id/musicTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text4"
+        android:layout_below="@+id/musicTitle"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="2dp"
+        android:textSize="15sp"
+        android:textColor="#444444"/>
+    
+    <TextView
+        android:id="@+id/content_title1"
+        android:layout_width="230dp"
+        android:layout_height="20dp"
+        android:background="#F8E6E6"
+        android:layout_marginLeft="10dp"
+        android:text="        歌曲标题"
+        android:textSize="17dp"
+        android:textColor="#444444"
+        android:layout_below="@+id/musicCover"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/content_title2"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="240dp"
+        android:background="#F8E6E6"
+        android:text="      歌手"
+        android:textSize="17dp"
+        android:textColor="#444444"
+        android:layout_below="@+id/musicCover"
+        android:layout_marginTop="15dp"/>
+
+    <ListView
+        android:id="@+id/list_music"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content_title1"
+        android:layout_marginTop="2dp"
+        android:scrollbars="none" />
+
+</RelativeLayout>
